@@ -1,7 +1,7 @@
 angular.module('botb_mobile.services', ['ngResource'])
 
 .factory('Entry', function($resource) {
-	var entry = $resource('http://battleofthebits.org/api/v1/entry/666');
+	var entry = $resource('http://battleofthebits.com/api/v1/entry/666');
 	console.log(entry);
 	return entry;
 	
@@ -9,7 +9,7 @@ angular.module('botb_mobile.services', ['ngResource'])
 
 .factory('api_resource', function($http) {
 	var api_resource = {
-		url_base : 'http://battleofthebits.org/api/v1/',
+		url_base : 'http://battleofthebits.com/api/v1/',
 		data : {},
 		call : function(query) {
 			$http({

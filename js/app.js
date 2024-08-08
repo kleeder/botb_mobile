@@ -9,7 +9,7 @@ angular.module('botb_mobile', [
 ])
 
 .run(['$ionicPlatform', '$cordovaNativeAudio', '$rootScope', 'spriteshit_loader', function($ionicPlatform, $cordovaNativeAudio, $rootScope, spriteshit_loader) {
-	$rootScope.botb_base = 'http://battleofthebits.org/';
+	$rootScope.botb_base = 'http://battleofthebits.com/';
 	$rootScope.api_base = $rootScope.botb_base + 'api/v1/';
 
 	$ionicPlatform.ready(function() {
